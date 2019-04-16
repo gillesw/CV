@@ -7,7 +7,8 @@
 %\newcommand{\subcventry}{•}
 \usepackage[left=2cm,right=1.9cm,top=2cm,bottom=2cm]{geometry}
 \setlength{\hintscolumnwidth}{2.8cm}
-\newcommand\Mycventry[6]{\cventry{#1}{\large #2}{#3}{#4}{#5}{#6}}  % this works
+\newcommand\Mycventry[6]{\cventry{#1}{\large #2}{\large #3}{#4}{#5}{#6}}  % this works
+\newcommand\results[6]{\cventry{#1}{\mdseries\emph{#2}}{#3}{#4}{#5}{#6}}
 
 \firstname{Gilles}
 \familyname{Wagner}
@@ -36,10 +37,12 @@
 			\cvlistitem{Interface client.}
 			\cvlistitem{Pilotage de la qualité.}
 			\cvlistitem{Management d’équipes.}
-		\Mycventry{Août 18 -- Jan. 19}{Senior Manager}{Sopra Steria Consulting}{Industry, Transport \& Aéronautique}{}{}
+		\Mycventry{Août 18 -- Jan. 19}{Senior Manager}{Sopra Steria Consulting}{Industry,
+		 Transport \& Aéronautique}{}{}
 			\cvlistitem{Rédaction d’offres de conseil.}
 			\cvlistitem{Recrutement.}
-			\cvlistitem{Pilotage d’activités de chef de projets, PMO et direction de programmes.}
+			\cvlistitem{Pilotage d’activités de chef de projets, PMO et direction de
+			 programmes.}
 			\cvlistitem{Management d’équipes.}
 		\Mycventry{Jan. 11 -- Juil. 18}{Manager}{Assystem Group}{BU Complex Systems Engineering}{}{}
 			\cvlistitem{Management d’équipes sur les sujets liés à la gestion de projet.}
@@ -52,27 +55,29 @@
 			\cvlistitem{Interface client.}
 			\cvlistitem{Recrutement.}
 			\cvlistitem{Formation des équipes.}
-			Jusqu’à 20 personnes managées simultanément, jusqu’à 1,5M\euro /an de commande.
-		\cventry{Oct. 15 –- Juil. 18}{Manager de pôle de compétences}{Alstom Transport}{}{}{
-			Création et management du service « Common Solutions Pool » : Gestion des exigences, 			gestion de la documentation et gestion de la configuration.\\
-			Management d’équipes : 18 personnes multisites France et étranger.\\
-			Point unique de contact client, gestion de la satisfaction client.\\
-			Réalisation des entretiens annuels, fixation des objectifs.\\
-			Prestation possible sur tous les sites mondiaux.\\
-			Pilotage de l’équipe de support offshore en Inde.\\
-			Synergie avec les équipes client.\\
-			Centralisation des besoins, interface privilégiée des projets.\\
-			Accompagnement du changement.\\
-			Gestion de la sous-traitance.\\
-			Capture Leader : gestion de la capture des exigences contractuelles et de 							l’engagement des métiers sur la conformité en phase d’offres et d’exécution.\\
-			18 personnes, 1,2M\euro /an pour le service, Conduite du changement sur les 						programmes, les projets et les sites de production, gain de 2 à 3 mois sur 							l’engagement de conformité, Mise sous contrôle des métiers.}
-		\cventry{Janv. 11 –- Juil. 15}{Manager Gestion de projet}{Safran Aircraft Engines}{}{}{}
-		\cventry{}{Chef de projet}{Direction Industrielle}{}{}{
-			Pilotage du bureau d’études de Safran Aircraft Engines, de l’industrialisation, de
-			la qualité, de la supply chain et des fournisseurs sur 2 rangs.//
-			Pilotage technique de l’appel d’offre vie série.//
-			Nouvelle définition, retour à l’heure, mise sous contrôle de l’approvisionnement,
-			maitrise des coûts.}
+			\results{}{Jusqu’à 20 personnes managées simultanément, jusqu’à 1,5M\euro /an de
+			 commande}{}{}{}{}
+		\cventry{Oct. 15 –- Juil. 18}{Manager de pôle de compétences}{Alstom Transport}{}{}{}
+			\cvlistitem{Création et management du service « Common Solutions Pool » : Gestion des exigences, gestion de la documentation et gestion de la configuration.}
+			\cvlistitem{Management d’équipes : 18 personnes multisites France et étranger.}
+			\cvlistitem{Point unique de contact client, gestion de la satisfaction client.}
+			\cvlistitem{Réalisation des entretiens annuels, fixation des objectifs.}
+			\cvlistitem{Prestation possible sur tous les sites mondiaux.}
+			\cvlistitem{Pilotage de l’équipe de support offshore en Inde.}
+			\cvlistitem{Synergie avec les équipes client.}
+			\cvlistitem{Centralisation des besoins, interface privilégiée des projets.}
+			\cvlistitem{Accompagnement du changement.}
+			\cvlistitem{Gestion de la sous-traitance.}
+			\cvlistitem{Capture Leader : gestion de la capture des exigences contractuelles et 
+			de l’engagement des métiers sur la conformité en phase d’offres et d’exécution.}
+			\results{}{18 personnes, 1,2M\euro /an pour le service, Conduite du changement sur 
+			les programmes, les projets et les sites de production, gain de 2 à 3 mois sur 
+			l’engagement de conformité, Mise sous contrôle des métiers.}{}{}{}{}
+		\cventry{Jan. 11 –- Juil. 15}{Manager Gestion de projet}{Safran Aircraft Engines}{}{}{}
+		\cventry{}{Chef de projet}{Direction Industrielle}{}{}{}
+			\cvlistitem{Pilotage du bureau d’études de Safran Aircraft Engines, de l’industrialisation, de la qualité, de la supply chain et des fournisseurs sur 2 rangs.}
+			\cvlistitem{Pilotage technique de l’appel d’offre vie série.}
+			\results{}{Nouvelle définition, retour à l’heure, mise sous contrôle de l’approvisionnement, maitrise des coûts.}{}{}{}{}
 		\cventry{}{PMO}{Direction des Moteurs Militaires}{}{}{
 			Planification du transfert de production en Inde du moteur M88 (contrat MMRCA).\\
 			Audit de l’industrialisation.\\
@@ -110,7 +115,7 @@
 			et sur papier.\\
 			Rédaction de tests de matériel et de benchmarks en ligne et sur papier.\\
 			Plus de 100000 lecteurs sur Internet, plus de 80000 lecteurs sur papier.}
-		
+
 		%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
 \section{Formation}
 	\cventry{2007 -- 2008}{Mastère spécialisé « Management des projets technologiques »}{
